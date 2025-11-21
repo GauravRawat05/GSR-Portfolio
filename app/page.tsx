@@ -3,8 +3,9 @@
 import { useEffect, useState } from "react"
 import { useTheme } from "next-themes"
 import { Hero } from "@/components/ui/animated-hero";
-import { User, Briefcase, FileText, Home } from "lucide-react";
+import { User, Briefcase, FileText, Home, Github, Globe } from "lucide-react";
 import { NavBar } from "@/components/ui/tubelight-navbar";
+import { Button } from "@/components/ui/button";
 import { FaqsSection } from "@/components/ui/faqs-1";
 import FooterSection from "@/components/ui/footer";
 import { TextReveal } from "@/components/ui/text-reveal"
@@ -90,6 +91,26 @@ export function TimelineDemo() {
           <p className="mb-8 text-base font-normal text-neutral-500 md:text-2xl dark:text-neutral-400">
             Built and launched MoreTrendz from scratch
           </p>
+          <div className="flex gap-4">
+            <Button asChild variant="outline">
+              <a
+                href="https://github.com/GauravRawat05/moretrendz-website"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Github className="mr-2 h-4 w-4" /> View on GitHub
+              </a>
+            </Button>
+            <Button asChild>
+              <a
+                href="https://www.moretrendz.online"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Globe className="mr-2 h-4 w-4" /> View Project Live
+              </a>
+            </Button>
+          </div>
         </div>
       ),
     },
@@ -100,6 +121,26 @@ export function TimelineDemo() {
           <p className="mb-8 text-base font-normal text-neutral-500 md:text-2xl dark:text-neutral-400">
             Built and launched Portfolio Website from scratch
           </p>
+          <div className="flex gap-4">
+            <Button asChild variant="outline">
+              <a
+                href="https://github.com/GauravRawat05/myprotfolio"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Github className="mr-2 h-4 w-4" /> View on GitHub
+              </a>
+            </Button>
+            <Button asChild>
+              <a
+                href="https://gsr-portfolio.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Globe className="mr-2 h-4 w-4" /> View Project Live
+              </a>
+            </Button>
+          </div>
         </div>
       ),
     },
@@ -110,6 +151,26 @@ export function TimelineDemo() {
           <p className="mb-4 text-base font-normal text-neutral-500 md:text-2xl lg:text-2xl dark:text-neutral-400">
             Code-Catalyst: Our College's Tech Group. Joined and contributed as technical team member to group projects.
           </p>
+          <div className="flex gap-4">
+            <Button asChild variant="outline">
+              <a
+                href="https://github.com/GauravRawat05/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Github className="mr-2 h-4 w-4" /> View on GitHub
+              </a>
+            </Button>
+            <Button asChild>
+              <a
+                href="https://code-catalyst.pages.dev/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Globe className="mr-2 h-4 w-4" /> View Project Live
+              </a>
+            </Button>
+          </div>
         </div>
       ),
     },
@@ -134,11 +195,11 @@ export default function Page() {
       </main>
 
       <FadeIn id="projects" className="flex flex-col items-center" style={{ paddingTop: "5vh" }}>
-        <SparklesText className="text-center">
+        <SparklesText className="text-center pb-[7vh]">
           <TextReveal>Here are My Projects</TextReveal>
         </SparklesText>
         <TimelineDemo />
-      </FadeIn>
+      </FadeIn >
 
       <FadeIn id="skills" style={{ paddingTop: "10vh" }}>
         <SparklesText className="text-center">

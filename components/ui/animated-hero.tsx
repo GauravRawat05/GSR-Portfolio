@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { motion } from "framer-motion";
-import { MoveRight, PhoneCall } from "lucide-react";
+import { MoveRight, PhoneCall, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 import { SparklesText } from "@/components/ui/sparkles-text"
@@ -71,7 +71,13 @@ function Hero() {
             </Button> */}
 
             <Button size="lg" className="gap-4" asChild style={{ zIndex: 1 }}>
-              <a href="#projects" rel="noreferrer">View Projects <MoveRight className="w-4 h-4" /></a>
+              <a
+                href="https://drive.google.com/uc?export=download&id=1Ff-2y8xbQRtKYqd-rHS9idDijWiOhzG3"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Download Resume <Download className="w-4 h-4" />
+              </a>
             </Button>
           </div>
         </div>
