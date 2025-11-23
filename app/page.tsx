@@ -194,14 +194,14 @@ export default function Page() {
         <Hero />
       </main>
 
-      <FadeIn id="projects" className="flex flex-col items-center" style={{ paddingTop: "5vh" }}>
+      <FadeIn id="projects" className="flex flex-col items-center" style={{ paddingTop: "7vh" }}>
         <SparklesText className="text-center pb-[7vh]">
           <TextReveal>Here are My Projects</TextReveal>
         </SparklesText>
         <TimelineDemo />
       </FadeIn >
 
-      <FadeIn id="skills" style={{ paddingTop: "10vh" }}>
+      <FadeIn id="skills" style={{ paddingTop: "20vh" }}>
         <SparklesText className="text-center">
           <TextReveal>Here are My SKILLS</TextReveal>
         </SparklesText>
@@ -212,8 +212,10 @@ export default function Page() {
         <FaqsSection />
       </FadeIn>
 
+
+
       <FadeIn>
-        <ScrollVelocityContainer className="relative w-full text-4xl font-bold md:text-7xl md:py-15" style={{ padding: "10vh 0 10vh 0" }}>
+        <ScrollVelocityContainer className="relative w-full text-4xl font-bold md:text-7xl md:py-15" style={{ padding: "20vh 0 20vh 0" }}>
           <ScrollVelocityRow baseVelocity={20} direction={1}>
             . Open to Interships .
           </ScrollVelocityRow>

@@ -6,6 +6,13 @@ import { MoveRight, PhoneCall, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 import { SparklesText } from "@/components/ui/sparkles-text"
+import {
+  Dialog,
+  DialogContent,
+  DialogTrigger,
+  DialogTitle,
+} from "@/components/ui/dialog"
+import { ContactForm } from "@/components/ui/contact-form"
 
 
 function Hero() {
@@ -66,9 +73,17 @@ function Hero() {
             </p>
           </div>
           <div className="flex flex-row gap-3">
-            {/* <Button size="lg" className="gap-4" variant="outline" asChild>
-              <a href="#contact">Contact Me <PhoneCall className="w-4 h-4" /></a>
-            </Button> */}
+            <Dialog>
+              <DialogTrigger asChild>
+                <Button size="lg" className="gap-4" variant="outline">
+                  Contact Me <PhoneCall className="w-4 h-4" />
+                </Button>
+              </DialogTrigger>
+              <DialogContent className="sm:max-w-[425px] p-0 border-0 bg-transparent shadow-none">
+                <DialogTitle className="hidden">Contact Me</DialogTitle>
+                <ContactForm />
+              </DialogContent>
+            </Dialog>
 
             <Button size="lg" className="gap-4" asChild style={{ zIndex: 1 }}>
               <a
