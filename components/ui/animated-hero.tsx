@@ -72,7 +72,7 @@ function Hero() {
               Open to internships and project collaborations.
             </p>
           </div>
-          <div className="flex flex-row gap-3">
+          <div className="flex flex-col md:flex-row gap-3">
             <Dialog>
               <DialogTrigger asChild>
                 <Button size="lg" className="gap-4" variant="outline">

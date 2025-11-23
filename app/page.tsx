@@ -91,7 +91,7 @@ export function TimelineDemo() {
           <p className="mb-8 text-base font-normal text-neutral-500 md:text-2xl dark:text-neutral-400">
             Built and launched MoreTrendz from scratch
           </p>
-          <div className="flex gap-4">
+          <div className="flex flex-col md:flex-row gap-4">
             <Button asChild variant="outline">
               <a
                 href="https://github.com/GauravRawat05/moretrendz-website"
@@ -121,7 +121,7 @@ export function TimelineDemo() {
           <p className="mb-8 text-base font-normal text-neutral-500 md:text-2xl dark:text-neutral-400">
             Built and launched Portfolio Website from scratch
           </p>
-          <div className="flex gap-4">
+          <div className="flex flex-col md:flex-row gap-4">
             <Button asChild variant="outline">
               <a
                 href="https://github.com/GauravRawat05/myprotfolio"
@@ -151,7 +151,7 @@ export function TimelineDemo() {
           <p className="mb-4 text-base font-normal text-neutral-500 md:text-2xl lg:text-2xl dark:text-neutral-400">
             Code-Catalyst: Our College's Tech Group. Joined and contributed as technical team member to group projects.
           </p>
-          <div className="flex gap-4">
+          <div className="flex flex-col md:flex-row gap-4">
             <Button asChild variant="outline">
               <a
                 href="https://github.com/GauravRawat05/"
