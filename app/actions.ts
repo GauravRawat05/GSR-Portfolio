@@ -1,7 +1,11 @@
 'use server'
 
-const TELEGRAM_BOT_TOKEN = '7683832373:AAHow58-LqQ0dO25OUE3dyoRbohHmkBSZxU';
-const TELEGRAM_CHAT_ID = '5905098867';
+const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
+const TELEGRAM_CHAT_ID = process.env.TELEGRAM_CHAT_ID;
+
+if (!TELEGRAM_BOT_TOKEN || !TELEGRAM_CHAT_ID) {
+    console.error("Telegram credentials are not set in environment variables.");
+}
 
 export async function submitContactForm(formData: FormData) {
     const name = formData.get('name');
