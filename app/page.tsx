@@ -85,16 +85,22 @@ export function ParticlesDemo() {
 export function TimelineDemo() {
   const data = [
     {
-      title: "MoreTrendz - An E-commerce Full Stack Web Application",
+      title: "AI Job Scraper & Cold Emailer | Next.js, TypeScript, Tailwind, OpenRouter API 2025",
       content: (
         <div>
+          <p className="mb-4 text-base font-normal text-neutral-500 md:text-2xl dark:text-neutral-400">
+            <strong>Challenge:</strong> Manual job hunting and writing repetitive cold emails was inefficient and time-consuming.
+          </p>
+          <p className="mb-4 text-base font-normal text-neutral-500 md:text-2xl dark:text-neutral-400">
+            <strong>Action:</strong> Developed an automated pipeline that scrapes job postings via telegram channel and uses resume parser lib to parse uploaded resumes into JSON. Finally uses the Llama model API (via OpenRouter) to generate personalised resume.
+          </p>
           <p className="mb-8 text-base font-normal text-neutral-500 md:text-2xl dark:text-neutral-400">
-            Built and launched MoreTrendz from scratch
+            <strong>Result:</strong> Enabled one-click mail sending with auto-filled subject, body, and recipient details, improving outreach efficiency, reducing drafting time by 90%.
           </p>
           <div className="flex flex-col md:flex-row gap-4">
             <Button asChild variant="outline">
               <a
-                href="https://github.com/GauravRawat05/moretrendz-website"
+                href="https://github.com/GauravRawat05/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -103,7 +109,7 @@ export function TimelineDemo() {
             </Button>
             <Button asChild>
               <a
-                href="https://www.moretrendz.online"
+                href="https://gsr-job-scraper.vercel.app"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -115,11 +121,17 @@ export function TimelineDemo() {
       ),
     },
     {
-      title: "Portfolio Website - A Next.js Full Stack Web Application",
+      title: "Personal Portfolio Website | Next.js, React, Tailwind CSS 2025",
       content: (
         <div>
+          <p className="mb-4 text-base font-normal text-neutral-500 md:text-2xl dark:text-neutral-400">
+            <strong>Challenge:</strong> Lacked a centralized, high-performance platform to effectively showcase technical projects and full-stack skills.
+          </p>
+          <p className="mb-4 text-base font-normal text-neutral-500 md:text-2xl dark:text-neutral-400">
+            <strong>Action:</strong> Built a modern web application leveraging Next.js for server-side rendering and Tailwind for responsive design.
+          </p>
           <p className="mb-8 text-base font-normal text-neutral-500 md:text-2xl dark:text-neutral-400">
-            Built and launched Portfolio Website from scratch
+            <strong>Result:</strong> Successfully deployed a professional portfolio using to demonstrate Full Stack capabilities to recruiters.
           </p>
           <div className="flex flex-col md:flex-row gap-4">
             <Button asChild variant="outline">
@@ -145,11 +157,47 @@ export function TimelineDemo() {
       ),
     },
     {
-      title: "Code-Catalyst",
+      title: "MoreTrendz (E-Commerce Platform) | MERN Stack, JWT, Razorpay, Google Analytics 2024",
       content: (
         <div>
-          <p className="mb-4 text-base font-normal text-neutral-500 md:text-2xl lg:text-2xl dark:text-neutral-400">
-            Code-Catalyst: Our College's Tech Group. Joined and contributed as technical team member to group projects.
+          <p className="mb-4 text-base font-normal text-neutral-500 md:text-2xl dark:text-neutral-400">
+            <strong>Challenge:</strong> Required a scalable, full-featured dropshipping platform with advanced Admin Dashboard JWT secured to manage full e-commerce store.
+          </p>
+          <p className="mb-4 text-base font-normal text-neutral-500 md:text-2xl dark:text-neutral-400">
+            <strong>Action:</strong> Engineered a Full Stack application using Node.js/Express, JWT for the backend, Vue.js frontend, Mongodb for database and Integrated Razorpay for live payments and Google Analytics and Pixel Integration for Analytics.
+          </p>
+          <p className="mb-8 text-base font-normal text-neutral-500 md:text-2xl dark:text-neutral-400">
+            <strong>Result:</strong> Launched a production ready store with full admin CRUD dashboard and payment workflow
+          </p>
+          <div className="flex flex-col md:flex-row gap-4">
+            <Button asChild variant="outline">
+              <a
+                href="https://github.com/GauravRawat05/moretrendz-website"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Github className="mr-2 h-4 w-4" /> View on GitHub
+              </a>
+            </Button>
+            <Button asChild>
+              <a
+                href="https://www.moretrendz.online"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Globe className="mr-2 h-4 w-4" /> View Project Live
+              </a>
+            </Button>
+          </div>
+        </div>
+      ),
+    },
+    {
+      title: "Code Catalyst (College Tech Group) Technical Team Member 2023 – Present",
+      content: (
+        <div>
+          <p className="mb-8 text-base font-normal text-neutral-500 md:text-2xl dark:text-neutral-400">
+            Collaborated with peers to develop group software projects, fostering a culture of peer learning and code review. Contributed to technical workshops and project planning sessions.
           </p>
           <div className="flex flex-col md:flex-row gap-4">
             <Button asChild variant="outline">

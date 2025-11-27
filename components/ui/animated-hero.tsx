@@ -18,7 +18,7 @@ import { ContactForm } from "@/components/ui/contact-form"
 function Hero() {
   const [titleNumber, setTitleNumber] = useState(0);
   const titles = useMemo(
-    () => ["Full-Stack Developer", "JavaScript", "React & Next.js", "Node.js", "Tailwind CSS"],
+    () => ["Full-Stack Web Developer", "MERN Stack", "React & Next.js", "Node.js", "TypeScript"],
     []
   );
 
@@ -67,8 +67,8 @@ function Hero() {
             </h1>
 
             <p className="text-lg md:text-xl leading-relaxed tracking-tight text-muted-foreground max-w-2xl text-center">
-              Full‑stack web developer (fresher) building modern apps with React, Next.js, Node.js and Tailwind.
-              Projects include a full‑stack e‑commerce (moretrendz.online) and this animated portfolio.
+              Full‑stack web developer building modern apps with Next.js, TypeScript, and AI integrations.
+              Projects include an AI Job Scraper & Cold Emailer, a full‑stack e‑commerce platform, and this animated portfolio.
               Open to internships and project collaborations.
             </p>
           </div>
@@ -87,7 +87,7 @@ function Hero() {
 
             <Button size="lg" className="gap-4" asChild style={{ zIndex: 1 }}>
               <a
-                href="https://drive.google.com/uc?export=download&id=1Ff-2y8xbQRtKYqd-rHS9idDijWiOhzG3"
+                href="https://drive.google.com/uc?export=download&id=1_oOJ4L16Leq-HWCoZNsJqc5k9MagWt5C"
                 target="_blank"
                 rel="noopener noreferrer"
               >
