@@ -98,15 +98,6 @@ export function TimelineDemo() {
             <strong>Result:</strong> Enabled one-click mail sending with auto-filled subject, body, and recipient details, improving outreach efficiency, reducing drafting time by 90%.
           </p>
           <div className="flex flex-col md:flex-row gap-4">
-            <Button asChild variant="outline">
-              <a
-                href="https://github.com/GauravRawat05/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Github className="mr-2 h-4 w-4" /> View on GitHub
-              </a>
-            </Button>
             <Button asChild>
               <a
                 href="https://gsr-job-scraper.vercel.app"
@@ -134,15 +125,7 @@ export function TimelineDemo() {
             <strong>Result:</strong> Successfully deployed a professional portfolio using to demonstrate Full Stack capabilities to recruiters.
           </p>
           <div className="flex flex-col md:flex-row gap-4">
-            <Button asChild variant="outline">
-              <a
-                href="https://github.com/GauravRawat05/myprotfolio"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Github className="mr-2 h-4 w-4" /> View on GitHub
-              </a>
-            </Button>
+
             <Button asChild>
               <a
                 href="https://gsr-portfolio.vercel.app"
@@ -170,15 +153,6 @@ export function TimelineDemo() {
             <strong>Result:</strong> Launched a production ready store with full admin CRUD dashboard and payment workflow
           </p>
           <div className="flex flex-col md:flex-row gap-4">
-            <Button asChild variant="outline">
-              <a
-                href="https://github.com/GauravRawat05/moretrendz-website"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Github className="mr-2 h-4 w-4" /> View on GitHub
-              </a>
-            </Button>
             <Button asChild>
               <a
                 href="https://www.moretrendz.online"
@@ -200,15 +174,6 @@ export function TimelineDemo() {
             Collaborated with peers to develop group software projects, fostering a culture of peer learning and code review. Contributed to technical workshops and project planning sessions.
           </p>
           <div className="flex flex-col md:flex-row gap-4">
-            <Button asChild variant="outline">
-              <a
-                href="https://github.com/GauravRawat05/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Github className="mr-2 h-4 w-4" /> View on GitHub
-              </a>
-            </Button>
             <Button asChild>
               <a
                 href="https://code-catalyst.pages.dev/"
