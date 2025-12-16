@@ -85,6 +85,33 @@ export function ParticlesDemo() {
 export function TimelineDemo() {
   const data = [
     {
+      title: "Smart ChatPDF (RAG Web App) | Next.js 14, LangChain, Pinecone, Llama-3.3 2025",
+      content: (
+        <div>
+          <p className="mb-4 text-base font-normal text-neutral-500 md:text-2xl dark:text-neutral-400">
+            <strong>Challenge:</strong> We all love chatting with LLMs, but &quot;hallucinations&quot; are a major trust blocker. Needed a tool that prioritizes verifiable truth over creative storytelling.
+          </p>
+          <p className="mb-4 text-base font-normal text-neutral-500 md:text-2xl dark:text-neutral-400">
+            <strong>Action:</strong> Built a RAG app with Next.js 14, Groq (Llama-3.3), and Pinecone. Implemented clickable citations, smart parsing, and zero-hallucination logic.
+          </p>
+          <p className="mb-8 text-base font-normal text-neutral-500 md:text-2xl dark:text-neutral-400">
+            <strong>Result:</strong> Achieved verifiable answers with instant source proving, ensuring answers are strictly from the document.
+          </p>
+          <div className="flex flex-col md:flex-row gap-4">
+            <Button asChild>
+              <a
+                href="https://smart-chatpdf.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Globe className="mr-2 h-4 w-4" /> View Project Live
+              </a>
+            </Button>
+          </div>
+        </div>
+      ),
+    },
+    {
       title: "AI Job Scraper & Cold Emailer | Next.js, TypeScript, Tailwind, OpenRouter API 2025",
       content: (
         <div>
