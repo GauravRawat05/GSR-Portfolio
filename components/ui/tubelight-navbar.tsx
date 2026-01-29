@@ -87,32 +87,42 @@ export function NavBar({ items, className }: NavBarProps) {
     }
   }, [items])
 
-  useEffect(() => {
-    if (hovering) {
-      setExpanded(true)
-      pillWidth.set(expandedWidth)
-      if (hoverTimeoutRef.current) {
-        clearTimeout(hoverTimeoutRef.current)
-      }
-    } else {
-      hoverTimeoutRef.current = setTimeout(() => {
-        setExpanded(false)
-        pillWidth.set(collapsedWidth)
-      }, 600)
+  const handleMouseEnter = () => {
+    setHovering(true)
+    setExpanded(true)
+    if (hoverTimeoutRef.current) {
+      clearTimeout(hoverTimeoutRef.current)
     }
+  }
 
+  const handleMouseLeave = () => {
+    setHovering(false)
+    hoverTimeoutRef.current = setTimeout(() => {
+      setExpanded(false)
+    }, 600)
+  }
+
+  useEffect(() => {
     return () => {
       if (hoverTimeoutRef.current) {
         clearTimeout(hoverTimeoutRef.current)
       }
     }
-  }, [hovering, pillWidth, expandedWidth])
+  }, [])
+
+  useEffect(() => {
+    if (expanded) {
+      pillWidth.set(expandedWidth)
+    } else {
+      pillWidth.set(collapsedWidth)
+    }
+  }, [expanded, expandedWidth, collapsedWidth, pillWidth])
 
   return (
     <div className={cn("fixed top-6 left-1/2 -translate-x-1/2 z-50 max-w-full", className)}>
       <motion.nav
-        onMouseEnter={() => setHovering(true)}
-        onMouseLeave={() => setHovering(false)}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
         className="relative rounded-full"
         style={{
           width: pillWidth,

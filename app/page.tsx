@@ -3,10 +3,10 @@
 import { useEffect, useState } from "react"
 import { useTheme } from "next-themes"
 import { Hero } from "@/components/ui/animated-hero";
-import { User, Briefcase, FileText, Home, Github, Globe } from "lucide-react";
+import { User, Briefcase, FileText, Home, Globe } from "lucide-react";
 import { NavBar } from "@/components/ui/tubelight-navbar";
 import { Button } from "@/components/ui/button";
-import { FaqsSection } from "@/components/ui/faqs-1";
+import { StorySection } from "@/components/ui/story-section";
 import FooterSection from "@/components/ui/footer";
 import { TextReveal } from "@/components/ui/text-reveal"
 import {
@@ -18,34 +18,6 @@ import { Particles } from "@/components/ui/particles"
 import { FadeIn } from "@/components/ui/fade-in";
 import { SkillsSection } from "@/components/ui/skills-section";
 import { Timeline } from "@/components/ui/timeline";
-
-
-const testimonials = [
-  {
-    quote:
-      "MoreTrendz: full‑stack e‑commerce built from scratch with modern tech, secure auth, and responsive UI.",
-    name: "MoreTrendz Online",
-    designation: "Full‑stack E‑commerce",
-    src:
-      "/Moretrendz.png",
-  },
-  {
-    quote:
-      "Personal Portfolio: interactive Next.js site featuring advanced animations and custom graphics.",
-    name: "Portfolio Website",
-    designation: "Next.js + Tailwind + Framer Motion",
-    src:
-      "/p-p.png",
-  },
-  {
-    quote:
-      "Code‑Catalyst: contributed as technical team member to a group project, focusing on frontend experiences.",
-    name: "Code‑Catalyst Contributions",
-    designation: "Team Project",
-    src:
-      "/Code-Catalyst.png",
-  },
-];
 
 export function NavBarDemo() {
   const navItems = [
@@ -249,7 +221,7 @@ export default function Page() {
       </FadeIn>
 
       <FadeIn id="about">
-        <FaqsSection />
+        <StorySection />
       </FadeIn>
 
 

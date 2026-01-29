@@ -32,7 +32,7 @@ export function ContactForm() {
                 >
                     <CheckCircle className="w-16 h-16 text-green-500 mb-4" />
                     <h3 className="text-xl font-semibold mb-2">Message Sent!</h3>
-                    <p className="text-muted-foreground">Thanks for reaching out. I'll get back to you soon.</p>
+                    <p className="text-muted-foreground">Thanks for reaching out. I&apos;ll get back to you soon.</p>
                     <Button className="mt-6" variant="outline" onClick={() => setStatus("idle")}>
                         Send Another Message
                     </Button>

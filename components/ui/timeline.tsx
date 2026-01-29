@@ -1,6 +1,5 @@
 "use client";
 import {
-  useMotionValueEvent,
   useScroll,
   useTransform,
   motion,
@@ -35,29 +34,31 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
 
   return (
     <div
-      className="w-full max-w-4xl mx-auto h-[28rem] overflow-y-auto bg-white dark:bg-neutral-950 font-sans md:px-10 border border-neutral-200 dark:border-neutral-800 rounded-xl shadow-lg relative scrollbar-hide"
+      className="w-full max-w-5xl mx-auto h-[600px] md:h-[800px] overflow-y-auto bg-white/50 dark:bg-neutral-950/30 backdrop-blur-xl font-sans md:px-10 border border-neutral-200/50 dark:border-neutral-800/50 rounded-3xl shadow-2xl relative scrollbar-hide"
       ref={containerRef}
     >
-      <div ref={ref} className="relative max-w-7xl mx-auto pb-20">
+      <div ref={ref} className="relative max-w-7xl mx-auto pb-20 px-4 md:px-0">
         {data.map((item, index) => (
           <div
             key={index}
-            className="flex justify-start pt-10 md:pt-40 md:gap-10"
+            className="flex justify-start pt-10 md:pt-40 md:gap-10 group"
           >
             <div className="sticky flex flex-col md:flex-row z-40 items-center top-10 self-start max-w-xs lg:max-w-sm md:w-full">
-              <div className="h-10 absolute left-3 md:left-3 w-10 rounded-full bg-white dark:bg-black flex items-center justify-center">
-                <div className="h-4 w-4 rounded-full bg-neutral-200 dark:bg-neutral-800 border border-neutral-300 dark:border-neutral-700 p-2" />
+              <div className="h-10 absolute left-3 md:left-3 w-10 rounded-full bg-white dark:bg-black flex items-center justify-center shadow-[0_0_20px_rgba(var(--primary),0.5)] border border-neutral-200 dark:border-neutral-800 group-hover:scale-125 transition-transform duration-300">
+                <div className="h-4 w-4 rounded-full bg-neutral-200 dark:bg-neutral-800 border border-neutral-300 dark:border-neutral-700 p-2 group-hover:bg-primary transition-colors duration-300" />
               </div>
-              <h3 className="hidden md:block text-lg md:pl-20 md:text-xl font-bold text-black dark:text-white ">
+              <h3 className="hidden md:block text-lg md:pl-20 md:text-2xl font-bold text-neutral-500 dark:text-neutral-400 group-hover:text-primary transition-colors duration-300">
                 {item.title}
               </h3>
             </div>
 
             <div className="relative pl-20 pr-4 md:pl-4 w-full">
-              <h3 className="md:hidden block text-xl mb-4 text-left font-bold text-neutral-500 dark:text-neutral-500">
+              <h3 className="md:hidden block text-xl mb-4 text-left font-bold text-neutral-500 dark:text-neutral-500 group-hover:text-primary transition-colors duration-300">
                 {item.title}
               </h3>
-              {item.content}{" "}
+              <div className="relative p-6 rounded-2xl border border-transparent hover:border-white/10 hover:bg-white/5 transition-all duration-300 hover:shadow-xl">
+                {item.content}
+              </div>
             </div>
           </div>
         ))}
@@ -72,7 +73,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
               height: heightTransform,
               opacity: opacityTransform,
             }}
-            className="absolute inset-x-0 top-0  w-[2px] bg-gradient-to-t from-purple-500 via-blue-500 to-transparent from-[0%] via-[10%] rounded-full"
+            className="absolute inset-x-0 top-0  w-[2px] bg-gradient-to-t from-purple-500 via-blue-500 to-transparent from-[0%] via-[10%] rounded-full shadow-[0_0_15px_rgba(168,85,247,0.8)]"
           />
         </div>
       </div>
