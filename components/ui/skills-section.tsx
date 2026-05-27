@@ -9,38 +9,39 @@ const skillsData = [
         category: "Frontend Development",
         icon: <Code className="w-6 h-6 text-blue-500" />,
         skills: [
+            "React.js",
+            "Next.js",
+            "Vue.js",
+            "JavaScript (ES6+)",
+            "TypeScript",
             "HTML5",
             "CSS3",
-            "JavaScript",
-            "Vue.js",
-            "Tailwind CSS",
-            "Responsive Design",
         ],
     },
     {
-        category: "Backend Development",
+        category: "Backend & Database",
         icon: <Database className="w-6 h-6 text-green-500" />,
         skills: [
             "Node.js",
-            "Next.js",
-            "React",
-            "Express",
-            "SQL",
+            "Express.js",
+            "REST APIs",
+            "JWT Authentication",
+            "RBAC",
             "MongoDB",
-            "TypeScript",
+            "Mongoose",
         ],
     },
     {
-        category: "Tools & Workflow",
+        category: "AI, Agentic & Tools",
         icon: <Wrench className="w-6 h-6 text-purple-500" />,
         skills: [
-            "Excel",
-            "Basic Python",
+            "Agentic Workflows",
+            "RAG Pipelines",
+            "LLM Integration",
             "Git & GitHub",
             "Vercel",
-            "Render",
-            "Netlify",
-            "AI Agentic Workflow (Cursor, Antigravity, Warp etc)",
+            "CI/CD",
+            "Postman",
         ],
     },
 ];
@@ -95,8 +96,22 @@ export function SkillsSection() {
                                     <motion.span
                                         key={skillIndex}
                                         variants={itemVariants}
-                                        whileHover={{ scale: 1.05 }}
-                                        className="px-3 py-1.5 text-sm font-medium rounded-full bg-white/50 dark:bg-white/10 border border-gray-200 dark:border-white/10 text-gray-800 dark:text-gray-200 hover:bg-white dark:hover:bg-white/20 hover:shadow-sm transition-all cursor-default"
+                                        whileHover={{ 
+                                            scale: 1.08, 
+                                            y: -2,
+                                            boxShadow: index === 0 
+                                                ? "0 4px 12px rgba(59, 130, 246, 0.2)" 
+                                                : index === 1 
+                                                ? "0 4px 12px rgba(34, 197, 94, 0.2)" 
+                                                : "0 4px 12px rgba(168, 85, 247, 0.2)"
+                                        }}
+                                        className={`px-3 py-1.5 text-sm font-medium rounded-full bg-white/50 dark:bg-white/10 border text-gray-800 dark:text-gray-200 hover:bg-white dark:hover:bg-white/20 transition-all duration-200 cursor-default border-gray-200 dark:border-white/10 ${
+                                            index === 0 
+                                                ? "hover:border-blue-500/50 hover:text-blue-600 dark:hover:text-blue-400" 
+                                                : index === 1 
+                                                ? "hover:border-green-500/50 hover:text-green-600 dark:hover:text-green-400" 
+                                                : "hover:border-purple-500/50 hover:text-purple-600 dark:hover:text-purple-400"
+                                        }`}
                                     >
                                         {skill}
                                     </motion.span>

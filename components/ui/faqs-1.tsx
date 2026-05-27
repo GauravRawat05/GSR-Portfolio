@@ -42,9 +42,9 @@ export function FaqsSection() {
 }
 
 const questions = [
-	{ id: "item-1", title: "Who am I?", content: "I'm Gaurav — a Full-Stack Dev & GenAI enthusiast building intelligent web apps with Next.js & Node." },
-	{ id: "item-2", title: "What have I built?", content: "Built 'MoreTrendz' (e-commerce), this 3D portfolio, and Chat with PDF web app with LLMs and core tools at Code-Catalyst." },
-	{ id: "item-3", title: "What's my stack?", content: "React, Next.js, Node.js & Tailwind. Plus Framer Motion & Three.js for that extra spark." },
-	{ id: "item-4", title: "Am I available?", content: "Yes! Ready for internships, freelance, and exciting collabs." },
+	{ id: "item-1", title: "Who am I?", content: "I'm Gaurav — a Full-Stack Developer & QA Executive with production experience building secure backend and frontend architectures." },
+	{ id: "item-2", title: "What have I built?", content: "Built the Task Management System and Lead Management System backends (deployed to production), 'MoreTrendz' (e-commerce platform), and several GenAI tools like ChatPDF." },
+	{ id: "item-3", title: "What's my stack?", content: "React.js, Next.js, Vue.js, Node.js, Express.js, MongoDB, TypeScript, and Agentic AI workflows." },
+	{ id: "item-4", title: "Am I available?", content: "Yes! IBM AI Certified and available to join immediately for Full-Stack Developer roles or internships." },
 	{ id: "item-5", title: "How can you contact me?", content: "Email: itsgauravrawat2005@gmail.com | Phone: +91 93198 10682 | GitHub: GauravRawat05" },
 ];

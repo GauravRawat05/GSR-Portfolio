@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react"
 import { useTheme } from "next-themes"
 import { Hero } from "@/components/ui/animated-hero";
-import { User, Briefcase, FileText, Home, Globe } from "lucide-react";
+import { User, Briefcase, FileText, Home, Globe, Github } from "lucide-react";
 import { NavBar } from "@/components/ui/tubelight-navbar";
 import { Button } from "@/components/ui/button";
 import { StorySection } from "@/components/ui/story-section";
@@ -57,26 +57,42 @@ export function ParticlesDemo() {
 export function TimelineDemo() {
   const data = [
     {
-      title: "Smart ChatPDF (RAG Web App) | Next.js 14, LangChain, Pinecone, Llama-3.3 2025",
+      title: "Full Stack Developer & QA Executive | Athenura India | Feb 2026 – Present",
       content: (
         <div>
           <p className="mb-4 text-base font-normal text-neutral-500 md:text-2xl dark:text-neutral-400">
-            <strong>Challenge:</strong> We all love chatting with LLMs, but &quot;hallucinations&quot; are a major trust blocker. Needed a tool that prioritizes verifiable truth over creative storytelling.
+            <strong>Challenge:</strong> Stepped into a production environment requiring rapid, high-quality development of full-stack modules and rigorous quality assurance across multiple active projects.
           </p>
           <p className="mb-4 text-base font-normal text-neutral-500 md:text-2xl dark:text-neutral-400">
-            <strong>Action:</strong> Built a RAG app with Next.js 14, Groq (Llama-3.3), and Pinecone. Implemented clickable citations, smart parsing, and zero-hallucination logic.
+            <strong>Action:</strong> Engineered robust backends for the Lead Management and Task Management Systems. Implemented a 4-tier RBAC, established systematic QA pipelines, and optimized complex MongoDB queries.
           </p>
           <p className="mb-8 text-base font-normal text-neutral-500 md:text-2xl dark:text-neutral-400">
-            <strong>Result:</strong> Achieved verifiable answers with instant source proving, ensuring answers are strictly from the document.
+            <strong>Result:</strong> Promoted from intern to QA Executive within 2 months. Reduced production bugs by 40% across 3+ active projects and minimized database query response times by 35%.
+          </p>
+        </div>
+      ),
+    },
+    {
+      title: "Task Management System | React.js, Node.js, Express.js, MongoDB, RBAC | Mar – Apr 2026",
+      content: (
+        <div>
+          <p className="mb-4 text-base font-normal text-neutral-500 md:text-2xl dark:text-neutral-400">
+            <strong>Challenge:</strong> Managing task distribution for large teams with different privilege levels without manual onboarding bottlenecks.
+          </p>
+          <p className="mb-4 text-base font-normal text-neutral-500 md:text-2xl dark:text-neutral-400">
+            <strong>Action:</strong> Built a 4-tier RBAC system (Admin, Manager, Lead, Member) with bulk CSV user import capabilities. Handled 50+ concurrent tasks across teams of 20+ members (60 commits in 18 days).
+          </p>
+          <p className="mb-8 text-base font-normal text-neutral-500 md:text-2xl dark:text-neutral-400">
+            <strong>Result:</strong> Slashed team onboarding time by 80% through automated role and task assignments.
           </p>
           <div className="flex flex-col md:flex-row gap-4">
-            <Button asChild>
+            <Button asChild variant="outline">
               <a
-                href="https://smart-chatpdf.vercel.app/"
+                href="https://github.com/GauravRawat05/TaskManagementSystem"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Globe className="mr-2 h-4 w-4" /> View Project Live
+                <Github className="mr-2 h-4 w-4" /> View Repository
               </a>
             </Button>
           </div>
@@ -84,26 +100,26 @@ export function TimelineDemo() {
       ),
     },
     {
-      title: "AI Job Scraper & Cold Emailer | Next.js, TypeScript, Tailwind, OpenRouter API 2025",
+      title: "Lead Management System | React.js, Node.js, MongoDB, JWT, REST API, Vercel | Feb – Mar 2026",
       content: (
         <div>
           <p className="mb-4 text-base font-normal text-neutral-500 md:text-2xl dark:text-neutral-400">
-            <strong>Challenge:</strong> Manual job hunting and writing repetitive cold emails was inefficient and time-consuming.
+            <strong>Challenge:</strong> Developing a secure, performant lead capturing system with distinct schemas and JWT-based access controls to restrict unauthorized access.
           </p>
           <p className="mb-4 text-base font-normal text-neutral-500 md:text-2xl dark:text-neutral-400">
-            <strong>Action:</strong> Developed an automated pipeline that scrapes job postings via telegram channel and uses resume parser lib to parse uploaded resumes into JSON. Finally uses the Llama model API (via OpenRouter) to generate personalised resume.
+            <strong>Action:</strong> Designed 15+ RESTful API endpoints with MongoDB schemas (6+ collections) and JWT tokenization. Deployed the backend securely to Vercel (112 commits in 25 days).
           </p>
           <p className="mb-8 text-base font-normal text-neutral-500 md:text-2xl dark:text-neutral-400">
-            <strong>Result:</strong> Enabled one-click mail sending with auto-filled subject, body, and recipient details, improving outreach efficiency, reducing drafting time by 90%.
+            <strong>Result:</strong> Successfully reduced unauthorized access attempts to lead databases by 100%.
           </p>
           <div className="flex flex-col md:flex-row gap-4">
-            <Button asChild>
+            <Button asChild variant="outline">
               <a
-                href="https://gsr-job-scraper.vercel.app"
+                href="https://github.com/GauravRawat05/LeadManagementforLMS"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Globe className="mr-2 h-4 w-4" /> View Project Live
+                <Github className="mr-2 h-4 w-4" /> View Repository
               </a>
             </Button>
           </div>
@@ -111,66 +127,17 @@ export function TimelineDemo() {
       ),
     },
     {
-      title: "Personal Portfolio Website | Next.js, React, Tailwind CSS 2025",
+      title: "Technical Team Member | Code Catalyst, Faridabad | Aug 2025 – Present",
       content: (
         <div>
           <p className="mb-4 text-base font-normal text-neutral-500 md:text-2xl dark:text-neutral-400">
-            <strong>Challenge:</strong> Lacked a centralized, high-performance platform to effectively showcase technical projects and full-stack skills.
+            <strong>Challenge:</strong> Boosting developer skills and engagement among engineering students while maintaining high standards in code quality.
           </p>
           <p className="mb-4 text-base font-normal text-neutral-500 md:text-2xl dark:text-neutral-400">
-            <strong>Action:</strong> Built a modern web application leveraging Next.js for server-side rendering and Tailwind for responsive design.
+            <strong>Action:</strong> Led 3 technical workshops on MERN stack development and conducted thorough code reviews across 10+ student-led peer projects.
           </p>
           <p className="mb-8 text-base font-normal text-neutral-500 md:text-2xl dark:text-neutral-400">
-            <strong>Result:</strong> Successfully deployed a professional portfolio using to demonstrate Full Stack capabilities to recruiters.
-          </p>
-          <div className="flex flex-col md:flex-row gap-4">
-
-            <Button asChild>
-              <a
-                href="https://gsr-portfolio.vercel.app"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Globe className="mr-2 h-4 w-4" /> View Project Live
-              </a>
-            </Button>
-          </div>
-        </div>
-      ),
-    },
-    {
-      title: "MoreTrendz (E-Commerce Platform) | MERN Stack, JWT, Razorpay, Google Analytics 2024",
-      content: (
-        <div>
-          <p className="mb-4 text-base font-normal text-neutral-500 md:text-2xl dark:text-neutral-400">
-            <strong>Challenge:</strong> Required a scalable, full-featured dropshipping platform with advanced Admin Dashboard JWT secured to manage full e-commerce store.
-          </p>
-          <p className="mb-4 text-base font-normal text-neutral-500 md:text-2xl dark:text-neutral-400">
-            <strong>Action:</strong> Engineered a Full Stack application using Node.js/Express, JWT for the backend, Vue.js frontend, Mongodb for database and Integrated Razorpay for live payments and Google Analytics and Pixel Integration for Analytics.
-          </p>
-          <p className="mb-8 text-base font-normal text-neutral-500 md:text-2xl dark:text-neutral-400">
-            <strong>Result:</strong> Launched a production ready store with full admin CRUD dashboard and payment workflow
-          </p>
-          <div className="flex flex-col md:flex-row gap-4">
-            <Button asChild>
-              <a
-                href="https://www.moretrendz.online"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Globe className="mr-2 h-4 w-4" /> View Project Live
-              </a>
-            </Button>
-          </div>
-        </div>
-      ),
-    },
-    {
-      title: "Code Catalyst (College Tech Group) Technical Team Member 2023 – Present",
-      content: (
-        <div>
-          <p className="mb-8 text-base font-normal text-neutral-500 md:text-2xl dark:text-neutral-400">
-            Collaborated with peers to develop group software projects, fostering a culture of peer learning and code review. Contributed to technical workshops and project planning sessions.
+            <strong>Result:</strong> Increased student tech engagement in MERN stack by 30% and improved overall project code quality by 25%.
           </p>
           <div className="flex flex-col md:flex-row gap-4">
             <Button asChild>
@@ -179,7 +146,124 @@ export function TimelineDemo() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Globe className="mr-2 h-4 w-4" /> View Project Live
+                <Globe className="mr-2 h-4 w-4" /> View Group Live
+              </a>
+            </Button>
+          </div>
+        </div>
+      ),
+    },
+    {
+      title: "MoreTrendz (E-Commerce Platform) | MERN Stack, JWT, Razorpay, Google Analytics | 2024 – 2025",
+      content: (
+        <div>
+          <p className="mb-4 text-base font-normal text-neutral-500 md:text-2xl dark:text-neutral-400">
+            <strong>Challenge:</strong> Developing a highly scalable e-commerce dropshipping platform with complete payment processing, user analytics, and a comprehensive admin CRUD dashboard.
+          </p>
+          <p className="mb-4 text-base font-normal text-neutral-500 md:text-2xl dark:text-neutral-400">
+            <strong>Action:</strong> Engineered a Vue.js frontend, Express/Node.js backend, and integrated Razorpay payment gateway, Google Analytics, and Facebook Pixel.
+          </p>
+          <p className="mb-8 text-base font-normal text-neutral-500 md:text-2xl dark:text-neutral-400">
+            <strong>Result:</strong> Boosted component reusability by 60% and reduced page load speeds by 45%.
+          </p>
+          <div className="flex flex-col md:flex-row gap-4">
+            <Button asChild>
+              <a
+                href="https://www.moretrendz.online"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Globe className="mr-2 h-4 w-4" /> View Live Site
+              </a>
+            </Button>
+            <Button asChild variant="outline">
+              <a
+                href="https://github.com/GauravRawat05/moretrendz-website"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Github className="mr-2 h-4 w-4" /> View Repository
+              </a>
+            </Button>
+          </div>
+        </div>
+      ),
+    },
+    {
+      title: "Smart ChatPDF (RAG Web App) | Next.js 14, LangChain, Pinecone, Llama-3.3 | 2025",
+      content: (
+        <div>
+          <p className="mb-4 text-base font-normal text-neutral-500 md:text-2xl dark:text-neutral-400">
+            <strong>Challenge:</strong> standard LLMs hallucinate factual data. Needed a tool that parses documents and strictly answers from user-uploaded PDFs with verifiable proof.
+          </p>
+          <p className="mb-4 text-base font-normal text-neutral-500 md:text-2xl dark:text-neutral-400">
+            <strong>Action:</strong> Built a Retrieval-Augmented Generation (RAG) app with Next.js 14, LangChain, Pinecone vector store, and Groq API. Added clickable source citations.
+          </p>
+          <p className="mb-8 text-base font-normal text-neutral-500 md:text-2xl dark:text-neutral-400">
+            <strong>Result:</strong> Achieved zero-hallucination factual question answering with source citations displaying matching snippet context.
+          </p>
+          <div className="flex flex-col md:flex-row gap-4">
+            <Button asChild>
+              <a
+                href="https://smart-chatpdf.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Globe className="mr-2 h-4 w-4" /> View Live Site
+              </a>
+            </Button>
+          </div>
+        </div>
+      ),
+    },
+    {
+      title: "AI Job Scraper & Cold Emailer | Next.js, TypeScript, Tailwind, OpenRouter API | 2025",
+      content: (
+        <div>
+          <p className="mb-4 text-base font-normal text-neutral-500 md:text-2xl dark:text-neutral-400">
+            <strong>Challenge:</strong> Manual outreach and custom resume generation was tedious and took hours per job application.
+          </p>
+          <p className="mb-4 text-base font-normal text-neutral-500 md:text-2xl dark:text-neutral-400">
+            <strong>Action:</strong> Created an automated crawler tracking job channels and parses resume PDFs. Leveraged the OpenRouter Llama API to generate custom cold emails.
+          </p>
+          <p className="mb-8 text-base font-normal text-neutral-500 md:text-2xl dark:text-neutral-400">
+            <strong>Result:</strong> Slashed cold email generation and formatting time by 90%, enabling single-click email drafts.
+          </p>
+          <div className="flex flex-col md:flex-row gap-4">
+            <Button asChild>
+              <a
+                href="https://gsr-job-scraper.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Globe className="mr-2 h-4 w-4" /> View Live Site
+              </a>
+            </Button>
+          </div>
+        </div>
+      ),
+    },
+    {
+      title: "Personal Portfolio Website | Next.js, React, Tailwind CSS | 2025",
+      content: (
+        <div>
+          <p className="mb-4 text-base font-normal text-neutral-500 md:text-2xl dark:text-neutral-400">
+            <strong>Challenge:</strong> Needed an engaging, high-performance digital portfolio to display my projects, skills, and background with smooth 3D and dynamic elements.
+          </p>
+          <p className="mb-4 text-base font-normal text-neutral-500 md:text-2xl dark:text-neutral-400">
+            <strong>Action:</strong> Implemented Next.js, Framer Motion, and Tailwind CSS to craft beautiful scroll animations, a dark theme provider, particle systems, and responsive navbar elements.
+          </p>
+          <p className="mb-8 text-base font-normal text-neutral-500 md:text-2xl dark:text-neutral-400">
+            <strong>Result:</strong> Deployed a premium interactive portfolio showcasing professional experience and project repositories.
+          </p>
+          <div className="flex flex-col md:flex-row gap-4">
+            <Button asChild>
+              <a
+                href="https://gsr-portfolio.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Globe className="mr-2 h-4 w-4" /> View Live Site
               </a>
             </Button>
           </div>

@@ -16,26 +16,26 @@ const storyData: StoryItem[] = [
     year: "The Beginning",
     title: "Who Am I?",
     description:
-      "I'm Gaurav — a Full-Stack Developer & GenAI enthusiast. My journey started with a curiosity for how things work on the web, which quickly turned into a passion for building intelligent applications.",
+      "I'm Gaurav — a Full-Stack Developer, QA Executive, & GenAI enthusiast. My journey started with a curiosity for how things work on the web, which quickly turned into a passion for building robust full-stack systems and automated agentic workflows.",
     highlight: true,
   },
   {
     year: "The Stack",
     title: "My Arsenal",
     description:
-      "I specialize in the MERN stack (MongoDB, Express, React, Node.js) and Next.js. I don't just build UIs; I engineer experiences using Tailwind CSS, Framer Motion, and Three.js for that extra spark.",
+      "I specialize in the MERN stack (MongoDB, Express, React, Node.js) and Next.js / TypeScript. I don't just write API endpoints; I build complete, secure applications with RBAC and optimized queries.",
   },
   {
     year: "Recent Work",
     title: "What I Build",
     description:
-      "From 'MoreTrendz', a full-scale e-commerce platform, to AI-powered tools like 'Smart ChatPDF', I focus on solving real problems with modern tech.",
+      "From production-ready Lead & Task Management Systems at Athenura India (featuring 4-tier RBAC and high security) to 'MoreTrendz' (a complete dropshipping store), I deliver high-quality, tested software.",
   },
   {
     year: "Future",
     title: "What's Next?",
     description:
-      "I'm currently looking for internships and collaborative projects where I can push the boundaries of web development and AI integration. Ready to build something amazing together?",
+      "I'm currently seeking Full-Stack Developer roles or internships where I can push the boundaries of web development and AI integration. Ready to bring immediate value to a team!",
     highlight: true,
   },
 ];

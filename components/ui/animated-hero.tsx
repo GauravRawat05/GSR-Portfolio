@@ -18,7 +18,7 @@ import { ContactForm } from "@/components/ui/contact-form"
 function Hero() {
   const [titleNumber, setTitleNumber] = useState(0);
   const titles = useMemo(
-    () => ["Full-Stack Web Developer", "MERN Stack", "React & Next.js", "Node.js", "TypeScript"],
+    () => ["Full-Stack Developer", "MERN Stack Specialist", "QA Executive & Bug Hunter", "AI Integration Specialist", "Next.js & React Developer"],
     []
   );
 
@@ -73,9 +73,7 @@ function Hero() {
             </h1>
 
             <p className="text-lg md:text-xl leading-relaxed tracking-tight text-muted-foreground/80 max-w-2xl text-center backdrop-blur-sm p-4 rounded-xl border border-white/5 bg-white/5">
-              Full‑stack web developer building modern apps with Next.js, TypeScript, and AI integrations.
-              Projects include an AI Job Scraper & Cold Emailer, a full‑stack e‑commerce platform, and this animated portfolio.
-              Open to internships and project collaborations.
+              MERN Stack Developer with production experience building and deploying full-stack applications. Promoted from intern to QA Executive within 2 months based on consistent delivery and code quality. IBM AI Certified. Available to join immediately.
             </p>
           </div>
           <div className="flex flex-col md:flex-row gap-4 mt-8">
@@ -94,7 +92,7 @@ function Hero() {
 
             <Button size="lg" variant="outline" className="gap-4 backdrop-blur-md bg-white/5 hover:bg-white/10 border-white/10" asChild style={{ zIndex: 1 }}>
               <a
-                href="https://drive.google.com/uc?export=download&id=1_oOJ4L16Leq-HWCoZNsJqc5k9MagWt5C"
+                href="https://drive.google.com/uc?export=download&id=1SJCBVT16KQ-4BeUFT6bF9Js5E4Cpt4f9"
                 target="_blank"
                 rel="noopener noreferrer"
               >
